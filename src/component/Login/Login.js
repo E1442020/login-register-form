@@ -2,12 +2,14 @@ import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "../Register/Register.css";
 
+
 export default function Login() {
   const [confirmEmail, setConfirmEmail] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [done, setDone] = useState(false);
   const [submit, setSubmit] = useState(false);
   const linkRef = useRef("");
+ 
   // linkRef.current.display='none'
 
   const handleClickLoginForm = (e) => {
@@ -27,6 +29,7 @@ export default function Login() {
     }
     if (valid == true) {
       linkRef.current.click();
+      localStorage.setItem('login',true)
     }
     setTimeout(() => console.log(valid), 1000);
 
@@ -38,11 +41,11 @@ export default function Login() {
     <>
       <div className="register-login-container">
         <div className="login-content">
-          {submit ? (
+          {submit ? 
             <>
               {done ? "" : <p className="invalid">Invalid Email or Password</p>}
             </>
-          ) : (
+            : (
             ""
           )}
 
