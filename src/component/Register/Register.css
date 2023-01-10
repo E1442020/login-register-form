@@ -5,7 +5,7 @@
     padding: 15px;
     width: 30%;
     margin: 0 auto;
-    text-align: center;
+   
     margin-top: 70px;
     
 }
@@ -13,7 +13,8 @@
 .register-login-container form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 4px;
+    width: 100%;
   
 }
 .register-login-container form input{
@@ -32,14 +33,15 @@
     margin: 0 auto;
     border-radius: 5px;
     cursor: pointer;
-    
-    
-    background-color: #191919;
+    background-color: rgb(25, 25, 25);
     color: white;
     font-weight: bold;
 }
 .register-login-container form button:hover{
     opacity: .7;
+}
+.register-login-container .confirmField{
+    color:rgb(198, 15, 15)
 }
 .invalid{
     background-color: rgb(175, 102, 102);
@@ -57,6 +59,7 @@
     border-radius: 7px;
     cursor: pointer;
 }
+
 @media screen and (max-width: 940px) {
     .register-login-container{
         width: 80%;

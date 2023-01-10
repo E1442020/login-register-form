@@ -6,6 +6,7 @@ import '../Register/Register.css';
 export default function HelloPage() {
     const[displayPage,setDisplayPage]=useState(false);
     const linkRef = useRef("");
+    const fullName= localStorage.getItem('fullNameValue')
 
 const logOut=()=>{
     localStorage.removeItem('login');
@@ -25,7 +26,7 @@ const logOut=()=>{
     <> <div className='register-login-container'>
     <div className='register-content'>
         {displayPage?<><h2 className='finish'>Success <AiOutlineCheck size={30} /> </h2>
-        <h2>Hello </h2>
+        <h2>Hello {fullName} </h2>
         <button className='buttonStyle' onClick={logOut}><Link to='/' ref={linkRef}></Link>LogOut</button>
         </>:<><h2>Please First Login...</h2>
         <button  className='buttonStyle' onClick={logOut}><Link to='/' ref={linkRef}></Link>LogIn</button>
