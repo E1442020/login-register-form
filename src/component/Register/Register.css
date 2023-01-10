@@ -49,6 +49,14 @@
 .finish{
     color: green;
 }
+.buttonStyle{
+    background-color: rgb(48, 48, 48);
+    color: aliceblue;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
 @media screen and (max-width: 940px) {
     .register-login-container{
         width: 80%;

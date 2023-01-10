@@ -26,9 +26,9 @@ const logOut=()=>{
     <div className='register-content'>
         {displayPage?<><h2 className='finish'>Success <AiOutlineCheck size={30} /> </h2>
         <h2>Hello </h2>
-        <button onClick={logOut}><Link to='/' ref={linkRef}></Link>LogOut</button>
+        <button className='buttonStyle' onClick={logOut}><Link to='/' ref={linkRef}></Link>LogOut</button>
         </>:<><h2>please first login</h2>
-        <button onClick={logOut}><Link to='/' ref={linkRef}></Link>LogIn</button>
+        <button  className='buttonStyle'><Link to='/' ref={linkRef}></Link>LogIn</button>
 
         </>}
     </div>
