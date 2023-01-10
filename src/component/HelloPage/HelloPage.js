@@ -28,7 +28,7 @@ const logOut=()=>{
         <h2>Hello </h2>
         <button className='buttonStyle' onClick={logOut}><Link to='/' ref={linkRef}></Link>LogOut</button>
         </>:<><h2>please first login</h2>
-        <button  className='buttonStyle'><Link to='/' ref={linkRef}></Link>LogIn</button>
+        <button  className='buttonStyle' onClick={logOut}><Link to='/' ref={linkRef}></Link>LogIn</button>
 
         </>}
     </div>
