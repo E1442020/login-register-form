@@ -46,6 +46,9 @@
     padding: 10px;
     border-radius: 7px;
 }
+.finish{
+    color: green;
+}
 @media screen and (max-width: 940px) {
     .register-login-container{
         width: 80%;
