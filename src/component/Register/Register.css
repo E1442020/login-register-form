@@ -18,8 +18,8 @@
   
 }
 .register-login-container form input{
-    width: 90%;
-    margin: 0 auto;
+    /* width: 90%; */
+    /* margin: 0 auto; */
     padding: 10px 15px;
     border:none;
     border: 1px solid #191919 ;
@@ -28,9 +28,10 @@
 }
 .register-login-container form button{
     border: none;
-    padding: 10px 15px;
-    width: 97%;
-    margin: 0 auto;
+    padding: 15px;
+    /* width: 97%; */
+    /* margin: 0 auto; */
+    margin-top: 20px;
     border-radius: 5px;
     cursor: pointer;
     background-color: rgb(25, 25, 25);
@@ -52,7 +53,7 @@
     color: green;
 }
 .buttonStyle{
-    background-color: rgb(48, 48, 48);
+    background-color:  rgb(25, 25, 25);
     color: aliceblue;
     padding: 10px 15px;
     border: none;
